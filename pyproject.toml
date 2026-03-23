@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=68.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "bloat-radar"
+version = "1.0.0"
+description = "Analyze JavaScript/Python package sizes, find duplicates, suggest lighter alternatives"
+readme = "README.md"
+license = {text = "MIT"}
+requires-python = ">=3.9"
+authors = [{name = "bloat-radar contributors"}]
+keywords = ["npm", "pip", "package-size", "bloat", "dependencies", "treemap"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Environment :: Console",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Topic :: Software Development :: Build Tools",
+]
+dependencies = [
+    "click>=8.0",
+    "rich>=13.0",
+]
+
+[project.scripts]
+bloat-radar = "bloat_radar.cli:cli"
+
+[project.urls]
+Homepage = "https://github.com/bloat-radar/bloat-radar"
+Issues = "https://github.com/bloat-radar/bloat-radar/issues"
