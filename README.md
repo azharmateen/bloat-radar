@@ -1,5 +1,8 @@
 # bloat-radar
 
+[![Built with Claude Code](https://img.shields.io/badge/Built%20with-Claude%20Code-blue?logo=anthropic&logoColor=white)](https://claude.ai/code)
+
+
 **Your dependencies are bloated. Find out by how much.**
 
 Analyze JavaScript/Python package sizes, find duplicates, and get suggestions for lighter alternatives -- all from the terminal.
